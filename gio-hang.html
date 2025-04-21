@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - HDLFASHION</title>
+    <meta name="description" content="Giỏ hàng của bạn tại HDLFASHION - Cửa hàng thời trang Việt Nam chất lượng cao.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50" class="logo-svg">
+                        <text x="10" y="35" font-family="Montserrat" font-size="28" font-weight="700" fill="#e63946">HDL<tspan fill="#1d3557">FASHION</tspan></text>
+                    </svg>
+                </a>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="danh-muc.html">Sản phẩm</a></li>
+                    <li><a href="danh-muc.html?category=nam">Nam</a></li>
+                    <li><a href="danh-muc.html?category=nu">Nữ</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="gio-hang.html" class="cart-icon active"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>GIỎ HÀNG</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Trang chủ</a> / <span>Giỏ hàng</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <div class="container">
+                <div class="cart-wrapper">
+                    <div class="cart-items">
+                        <div class="cart-header">
+                            <div class="cart-product-header">Sản phẩm</div>
+                            <div class="cart-price-header">Giá</div>
+                            <div class="cart-quantity-header">Số lượng</div>
+                            <div class="cart-subtotal-header">Tổng tiền</div>
+                            <div class="cart-remove-header"></div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-product">
+                                <div class="cart-product-image product-1"></div>
+                                <div class="cart-product-info">
+                                    <h3 class="cart-product-title">Áo sơ mi nam dài tay</h3>
+                                    <div class="cart-product-meta">
+                                        <span class="cart-product-variant">Màu: Trắng</span>
+                                        <span class="cart-product-variant">Kích thước: M</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-price">999.000₫</div>
+                            <div class="cart-quantity">
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="cart-subtotal">999.000₫</div>
+                            <div class="cart-remove">
+                                <button class="remove-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-product">
+                                <div class="cart-product-image product-3"></div>
+                                <div class="cart-product-info">
+                                    <h3 class="cart-product-title">Quần jean nam </h3>
+                                    <div class="cart-product-meta">
+                                        <span class="cart-product-variant">Màu: Xanh đậm</span>
+                                        <span class="cart-product-variant">Kích thước: L</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-price">999.000₫</div>
+                            <div class="cart-quantity">
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="cart-subtotal">999.000₫</div>
+                            <div class="cart-remove">
+                                <button class="remove-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="cart-actions">
+                            <div class="coupon">
+                                <input type="text" placeholder="Mã giảm giá" class="coupon-input">
+                                <button class="btn btn-outline">Áp dụng</button>
+                            </div>
+                            <div class="cart-update">
+                                <button class="btn btn-outline">Cập nhật giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-summary">
+                        <h2>TÓM TẮT ĐƠN HÀNG</h2>
+                        <div class="summary-item">
+                            <span class="summary-label">Tổng sản phẩm:</span>
+                            <span class="summary-value">2</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Tạm tính:</span>
+                            <span class="summary-value">999.000₫</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Giảm giá:</span>
+                            <span class="summary-value">0₫</span>
+                        </div>
+                        <div class="summary-item shipping">
+                            <span class="summary-label">Phí vận chuyển:</span>
+                            <div class="shipping-options">
+                                <label class="shipping-option">
+                                    <input type="radio" name="shipping" value="free" checked>
+                                    <span>Miễn phí (đơn từ 500.000₫)</span>
+                                </label>
+                                <label class="shipping-option">
+                                    <input type="radio" name="shipping" value="standard">
+                                    <span>Tiêu chuẩn (30.000₫)</span>
+                                </label>
+                                <label class="shipping-option">
+                                    <input type="radio" name="shipping" value="express">
+                                    <span>Nhanh (60.000₫)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="summary-total">
+                            <span class="total-label">Tổng cộng:</span>
+                            <span class="total-value">999.000₫</span>
+                        </div>
+                        <div class="checkout-button">
+                            <button class="btn btn-primary btn-block">TIẾN HÀNH THANH TOÁN</button>
+                        </div>
+                        <div class="payment-methods-summary">
+                            <p>Chấp nhận thanh toán</p>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shopping-suggestions">
+            <div class="container">
+                <h2 class="section-title">CÓ THỂ BẠN CŨNG THÍCH</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image product-5"></div>
+                        <div class="product-info">
+                            <h3>Áo thun nam</h3>
+                            <div class="product-price">
+                                <span class="current-price">999.000₫</span>
+                            </div>
+                            <a href="chi-tiet-san-pham.html" class="btn btn-secondary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-badge">-20%</div>
+                        <div class="product-image product-6"></div>
+                        <div class="product-info">
+                            <h3>Chân váy</h3>
+                            <div class="product-price">
+                                <span class="current-price">999.000₫</span>
+                                <span class="old-price">999.000₫</span>
+                            </div>
+                            <a href="chi-tiet-san-pham.html" class="btn btn-secondary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image product-9"></div>
+                        <div class="product-info">
+                            <h3>Áo khoác bomber nam</h3>
+                            <div class="product-price">
+                                <span class="current-price">999.000₫</span>
+                            </div>
+                            <a href="chi-tiet-san-pham.html" class="btn btn-secondary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image product-2"></div>
+                        <div class="product-info">
+                            <h3>Đầm suông nữ</h3>
+                            <div class="product-price">
+                                <span class="current-price">999.000₫</span>
+                                <span class="old-price">999.000₫</span>
+                            </div>
+                            <a href="chi-tiet-san-pham.html" class="btn btn-secondary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>HDLFASHION</h3>
+                    <p>Thời trang Việt Nam chất lượng cao với giá cả phải chăng. Chúng tôi cam kết mang đến những sản phẩm tốt nhất cho khách hàng.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>LIÊN KẾT NHANH</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="danh-muc.html">Sản phẩm</a></li>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản dịch vụ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>DANH MỤC</h3>
+                    <ul class="footer-links">
+                        <li><a href="danh-muc.html?category=nam">Thời trang Nam</a></li>
+                        <li><a href="danh-muc.html?category=nu">Thời trang Nữ</a></li>
+                        <li><a href="#">Phụ kiện</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="#">Bộ sưu tập mới</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>THÔNG TIN LIÊN HỆ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Khu đô thị đại học, Quận Ngũ Hành Sơn, TP. Đà Nẵng</li>
+                        <li><i class="fas fa-phone"></i> 0813957972</li>
+                        <li><i class="fas fa-envelope"></i> info@hdlfashion.vn</li>
+                        <li><i class="fas fa-clock"></i> Thứ 2 - Chủ nhật: 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 HDLFASHION. </p>
+                </div>
+                <div class="payment-methods">
+                    <span>Thanh toán qua:</span>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
